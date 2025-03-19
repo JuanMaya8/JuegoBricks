@@ -1,8 +1,13 @@
 def contar_vocales(texto):
     texto = texto.lower()
     vocales = "aeiou"
-    contador = sum(1 for letra in texto if letra in vocales)
-    print(f"Número de vocales: {contador}")
+    return sum(1 for letra in texto if letra in vocales)
 
-frase = input("Ingrese una frase o palabra: ")
-contar_vocales(frase)
+def main():
+    frase = "Hola Mundo"  # Texto fijo de ejemplo
+    cantidad = contar_vocales(frase)
+    print(f"Texto: {frase}")
+    print(f"Número de vocales: {cantidad}")
+
+if __name__ == "__main__":
+    main()
