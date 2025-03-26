@@ -7,6 +7,6 @@ def adivina_el_numero(numero_secreto, intentos_max=10):
         intentos += 1
 
         if intento_actual == numero_secreto:
-            return True, intentos  # Número adivinado
-        
-    return False, intentos  # No se adivinó el número
+            return True, intentos  # ✅ Retorna True si adivina el número
+    
+    return False, intentos  # ❌ Retorna False si no lo logra
