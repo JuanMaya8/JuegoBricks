@@ -1,4 +1,15 @@
 def contar_vocales(texto):
-    texto = texto.lower()  # ✅ Convierte todo a minúsculas
+    texto = texto.lower()  # Convertir todo a minúsculas
     vocales = "aeiou"
-    return sum(1 for letra in texto if letra in vocales)
+    contador = 0
+
+    for letra in texto:
+        print(f"Letra analizada: {letra}")  # 🔥 Ver cada letra
+        if letra in vocales:
+            print(f"Vocal encontrada: {letra}")  # 🔍 Confirmar vocal
+            contador += 1
+
+    print(f"Texto analizado: {texto}")
+    print(f"Vocales contadas: {contador}")
+
+    return contador
