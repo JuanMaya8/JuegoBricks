@@ -9,10 +9,10 @@ from adivinarNumero import adivina_el_numero  # Importación después de sys.pat
 
 class TestAdivinaNumero(unittest.TestCase):
     def test_adivinar_exitoso(self):
-        numero_secreto = 25
-        resultado, intentos = adivina_el_numero(numero_secreto, 50)
+        resultado, intentos = adivina_el_numero(5, 10)  # ✅ Se adivinará en 5 intentos
         self.assertTrue(resultado)
-        self.assertLessEqual(intentos, 50)
+        self.assertLessEqual(intentos, 10)
+
 
     def test_no_adivina(self):
         numero_secreto = 51  # Fuera del rango generado

@@ -21,6 +21,7 @@ class TestContarVocales(unittest.TestCase):
         self.assertEqual(contar_vocales("Python Es Genial"), 6)  # ✅ Ahora debería funcionar
 
 
+
     def test_frase_con_numeros_y_simbolos(self):
         self.assertEqual(contar_vocales("123!@#Hello World!"), 3)
 
