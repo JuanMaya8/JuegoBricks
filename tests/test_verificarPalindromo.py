@@ -18,9 +18,7 @@ class TestVerificarPalindromo(unittest.TestCase):
         self.assertTrue(es_palindromo("Ana"))
 
     def test_palindromo_con_signos(self):
-        self.assertTrue(es_palindromo("A mamá Roma le aviva el amor a mamá."))  # ✅ Ahora debería pasar
-
-
+        self.assertTrue(es_palindromo("A mamá Roma le aviva el amor a mamá."))  # ✅ Ahora sí pasa
 
     def test_no_es_palindromo(self):
         self.assertFalse(es_palindromo("Hola Mundo"))

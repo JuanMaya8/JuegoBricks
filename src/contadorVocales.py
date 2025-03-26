@@ -1,3 +1,4 @@
 def contar_vocales(texto):
-    vocales = "aeiouAEIOU"  # ✅ Ahora incluye mayúsculas también
+    texto = texto.lower()  # ✅ Convierte todo a minúsculas
+    vocales = "aeiou"
     return sum(1 for letra in texto if letra in vocales)

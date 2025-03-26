@@ -18,7 +18,8 @@ class TestContarVocales(unittest.TestCase):
         self.assertEqual(contar_vocales("rhythm"), 0)
 
     def test_mayusculas_y_minusculas(self):
-        self.assertEqual(contar_vocales("Python Es Genial"), 6)  # ✅ Ahora debería funcionar
+        self.assertEqual(contar_vocales("Python Es Genial"), 6)  # ✅ Ahora sí debe pasar
+
 
 
 
