@@ -1,5 +1,11 @@
+import sys
+import os
+
+# Agregar el directorio 'src' al path para encontrar los módulos
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
 import unittest
-from adivinarNumero import adivina_el_numero
+from adivinarNumero import adivina_el_numero  # Importación después de sys.path
 
 class TestAdivinaNumero(unittest.TestCase):
     def test_adivinar_exitoso(self):
